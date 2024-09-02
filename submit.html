@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your Idea - Student Innovation Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background: #f4f7f6;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0a74da;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 1rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+
+        nav a:hover {
+            background: #005bb5;
+        }
+
+        main {
+            padding: 3rem 1rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero {
+            text-align: center;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            color: #0a74da;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .form-section {
+            margin-top: 2rem;
+        }
+
+        .form-section h2 {
+            text-align: center;
+            color: #0a74da;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            margin: 0.5rem 0 0.2rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        form input:focus,
+        form textarea:focus {
+            border-color: #0a74da;
+            outline: none;
+        }
+
+        form button {
+            background: #0a74da;
+            color: #fff;
+            border: none;
+            padding: 0.75rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background 0.3s;
+            width: 100%;
+        }
+
+        form button:hover {
+            background: #005bb5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem 0;
+            background: #0a74da;
+            color: #fff;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Submit Your Idea</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="submit.html">Submit Your Idea</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Share Your Innovative Ideas</h2>
+            <p>We are excited to hear about your project! Please provide detailed information using the form below.</p>
+        </section>
+
+        <section class="form-section">
+            <h2>Submission Form</h2>
+            <form id="submissionForm">
+                <label for="title">Title of Your Project</label>
+                <input type="text" id="title" name="title" placeholder="Title of Your Project" required>
+                
+                <label for="description">Describe Your Idea</label>
+                <textarea id="description" name="description" placeholder="Describe Your Idea" required></textarea>
+                
+                <label for="technology">Technology Used (e.g., AI, Machine Learning, IoT)</label>
+                <input type="text" id="technology" name="technology" placeholder="Technology Used" required>
+                
+                <label for="impact">Expected Impact (e.g., Safety, Efficiency, Environmental)</label>
+                <input type="text" id="impact" name="impact" placeholder="Expected Impact" required>
+                
+                <label for="file">Upload Relevant Files</label>
+                <input type="file" id="file" name="file" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Student Innovation Portal. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

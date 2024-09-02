@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Student Innovation Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background: #f4f7f6;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0a74da;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: background 0.3s;
+            padding: 0.5rem 1rem;
+        }
+
+        nav a:hover {
+            background: #005bb5;
+            border-radius: 4px;
+        }
+
+        section {
+            background: #fff;
+            padding: 3rem 1rem;
+            margin: 2rem auto;
+            width: 85%;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #0a74da;
+            text-align: center;
+        }
+
+        section h3 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            color: #333;
+        }
+
+        section p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: #666;
+        }
+
+        section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        section ul li {
+            display: inline;
+            margin-right: 1rem;
+        }
+
+        section ul li a {
+            color: #0a74da;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        section ul li a:hover {
+            color: #005bb5;
+        }
+
+        form {
+            margin-top: 2rem;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        form button {
+            background: #0a74da;
+            color: #fff;
+            border: none;
+            padding: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 1rem;
+            display: block;
+            width: 100%;
+        }
+
+        form button:hover {
+            background: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="submit.html">Submit Your Idea</a>
+            <a href="features.html">Features</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Get in Touch</h2>
+        <p>If you have any questions, feedback, or need further information, please don't hesitate to reach out to us. We're here to support you every step of the way.</p>
+        
+        <h3>Contact Information</h3>
+        <p>Email: <a href="mailto:support@studentinnovationportal.com">support@studentinnovationportal.com</a></p>
+        <p>Phone: +1-234-567-890</p>
+
+        <h3>Follow Us</h3>
+        <p>Stay updated with the latest news and opportunities by following us on social media:</p>
+        <ul>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Facebook</a></li>
+        </ul>
+
+        <h3>Send Us a Message</h3>
+        <form id="contactForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
